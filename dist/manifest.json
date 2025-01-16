@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Personal Productivity Tracker",
+    "version": "1.0",
+    "description": "Track and enhance your productivity with goals and browsing insights.",
+    "permissions": ["tabs", "storage", "activeTab", "history"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Productivity Tracker"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  
